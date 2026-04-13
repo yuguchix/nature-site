@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>登山 | 山と森の記録</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+      background: #f6f6f1;
+      color: #2b2b2b;
+    }
+
+    header {
+      background: #2e4d2c;
+      color: white;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .site-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 16px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(20, 40, 20, 0.45), rgba(20, 40, 20, 0.45)), url('images/mountain.jpg') center/cover;
+      color: white;
+      padding: 72px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: 38px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 17px;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 20px 64px;
+    }
+
+    .intro {
+      background: white;
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 32px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .section-title {
+      font-size: 28px;
+      margin: 0 0 20px;
+      color: #2e4d2c;
+    }
+
+    .mountain-list {
+      display: grid;
+      gap: 18px;
+    }
+
+    .mountain-card {
+      background: white;
+      border-radius: 14px;
+      padding: 22px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .mountain-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .mountain-card h3 {
+      margin: 0 0 8px;
+      font-size: 22px;
+      color: #244021;
+    }
+
+    .mountain-meta {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .mountain-card p {
+      margin: 0 0 14px;
+    }
+
+    .detail-link {
+      display: inline-block;
+      padding: 10px 16px;
+      background: #4f6f46;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .detail-link:hover {
+      background: #3f5a38;
+    }
+
+    .note {
+      margin-top: 36px;
+      padding: 18px 20px;
+      background: #e9efe4;
+      border-left: 5px solid #4f6f46;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="site-title">山と森の記録</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#topics">Topics</a>
+      <a href="mountain.html">登山</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>登山の記録</h1>
+    <p>
+      これまでに歩いた山や、これから記録していきたい山を一覧でまとめるページです。
+      後から各山の詳細ページへつなげやすいように、山ごとのカード形式で整理しています。
+    </p>
+  </section>
+
+  <main>
+    <section class="intro">
+      <h2 class="section-title">このページについて</h2>
+      <p>
+        登った山の名前、エリア、ひとことメモを一覧化しています。
+        今は簡単な紹介だけですが、今後は各山の詳細ページを追加して、コース、装備、天候、感想、写真などもまとめていく予定です。
+      </p>
+    </section>
+
+    <section>
+      <h2 class="section-title">行った山のリスト</h2>
+      <div class="mountain-list">
+        <article class="mountain-card">
+          <h3>高尾山</h3>
+          <div class="mountain-meta">東京都 / 初心者向け / 日帰り</div>
+          <p>
+            都心から行きやすく、四季の変化も楽しめる定番の山。登山の練習や軽いハイキングにも向いています。
+          </p>
+          <a class="detail-link" href="mountain-takao.html">詳細を見る</a>
+        </article>
+
+        <article class="mountain-card">
+          <h3>雲取山</h3>
+          <div class="mountain-meta">東京都・埼玉県・山梨県 / 長距離 / 日帰り・小屋泊</div>
+          <p>
+            奥多摩を代表する山のひとつ。行程は長めですが、達成感があり、広い景色を楽しめる山です。
+          </p>
+          <a class="detail-link" href="mountain-kumotori.html">詳細を見る</a>
+        </article>
+
+        <article class="mountain-card">
+          <h3>谷川岳</h3>
+          <div class="mountain-meta">群馬県 / 岩場あり / 人気の百名山</div>
+          <p>
+            ロープウェイも使えるアクセスの良さと、迫力ある山容が魅力。天候変化に注意しながら歩きたい山です。
+          </p>
+          <a class="detail-link" href="mountain-tanigawa.html">詳細を見る</a>
+        </article>
+      </div>
+    </section>
+
+    <div class="note">
+      <strong>あとで拡張しやすい形です。</strong><br />
+      今は「詳細を見る」のリンク先ページがまだなくても大丈夫です。今後、たとえば <code>mountain-takao.html</code> のような個別ページを追加すれば、そのままつながります。
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 山と森の記録</p>
+  </footer>
+</body>
+</html>
