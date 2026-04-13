@@ -4,12 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>高尾山 | 山と森の記録</title>
+
   <style>
+    * { box-sizing: border-box; }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.7;
-      background: #f6f6f1;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.8;
+      background: #f4f5f2;
       color: #2b2b2b;
     }
 
@@ -17,42 +20,94 @@
       background: #2e4d2c;
       color: white;
       padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
     }
 
     header a {
       color: white;
       text-decoration: none;
       margin-right: 16px;
+      font-size: 14px;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(20,40,20,0.5), rgba(20,40,20,0.5)), url('images/mountain.jpg') center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    .hero p {
+      margin-top: 10px;
+      font-size: 18px;
+      opacity: 0.9;
     }
 
     main {
-      max-width: 900px;
+      max-width: 960px;
       margin: 0 auto;
       padding: 40px 20px 60px;
     }
 
-    .hero {
-      background: linear-gradient(rgba(20,40,20,0.45), rgba(20,40,20,0.45)), url('images/mountain.jpg') center/cover;
-      color: white;
-      padding: 70px 20px;
-      text-align: center;
+    .grid {
+      display: grid;
+      gap: 20px;
     }
 
-    .info-box {
+    .card {
       background: white;
-      border-radius: 12px;
+      border-radius: 14px;
       padding: 24px;
-      margin-top: 24px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
 
-    h1, h2 {
+    .card h2 {
+      margin-top: 0;
       color: #244021;
     }
 
-    .hero h1 {
-      color: white;
-      margin: 0;
+    .info-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .info-item {
+      background: #eef2ea;
+      padding: 10px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .info-item strong {
+      display: block;
+      font-size: 12px;
+      color: #555;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #2e4d2c;
+      font-size: 14px;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
     }
 
     footer {
@@ -62,12 +117,21 @@
       padding: 20px;
       font-size: 14px;
     }
+
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 30px; }
+    }
   </style>
 </head>
+
 <body>
+
   <header>
-    <a href="index.html">Home</a>
-    <a href="mountain.html">登山一覧</a>
+    <div>山と森の記録</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="mountain.html">登山一覧</a>
+    </nav>
   </header>
 
   <section class="hero">
@@ -76,32 +140,50 @@
   </section>
 
   <main>
-    <section class="info-box">
+
+    <section class="card">
       <h2>基本情報</h2>
-      <p><strong>場所：</strong>東京都八王子市</p>
-      <p><strong>標高：</strong>599m</p>
-      <p><strong>特徴：</strong>アクセスしやすく、初心者にも人気</p>
+      <div class="info-list">
+        <div class="info-item"><strong>場所</strong>東京都八王子市</div>
+        <div class="info-item"><strong>標高</strong>599m</div>
+        <div class="info-item"><strong>難易度</strong>初心者向け</div>
+        <div class="info-item"><strong>日帰り</strong>可能</div>
+      </div>
     </section>
 
-    <section class="info-box">
+    <section class="card">
       <h2>概要</h2>
       <p>
-        高尾山は、都心から電車で行きやすく、自然を感じながら歩ける人気の山です。
-        登山道の種類も多く、体力や目的に合わせてコースを選びやすいのが魅力です。
+        高尾山は、都心から電車でアクセスしやすく、気軽に自然を楽しめる人気の山です。
+        登山道の種類も多く、初心者から経験者まで楽しめるのが特徴です。
       </p>
     </section>
 
-    <section class="info-box">
+    <section class="card">
       <h2>感想メモ</h2>
       <p>
-        初心者でも歩きやすく、季節ごとの景色の変化も楽しめる山です。
-        短時間でも自然を味わいたい日に向いています。
+        登山というより散策に近い感覚で歩けるコースもあり、体力に不安があっても安心して楽しめる。
+        季節ごとに景色が変わるので、何度も訪れたくなる山。
       </p>
     </section>
+
+    <section class="card">
+      <h2>今後追加予定</h2>
+      <ul>
+        <li>ルート詳細</li>
+        <li>所要時間</li>
+        <li>写真ギャラリー</li>
+        <li>装備メモ</li>
+      </ul>
+    </section>
+
+    <a href="mountain.html" class="back-link">← 登山一覧に戻る</a>
+
   </main>
 
   <footer>
     <p>© 2026 山と森の記録</p>
   </footer>
+
 </body>
 </html>
