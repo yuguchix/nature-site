@@ -36,10 +36,20 @@ nav a:hover {
 }
 
 .hero {
-    background: linear-gradient(rgba(20, 40, 20, 0.45), rgba(20, 40, 20, 0.45)), url('images/takao-main.jpg') center/cover;
-    color: white;
-    padding: 88px 20px;
-    text-align: center;
+  color: white;
+  padding: 88px 20px;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-takao {
+  background-image: linear-gradient(rgba(20, 40, 20, 0.45), rgba(20, 40, 20, 0.45)), url('images/takao-main.jpg');
+}
+
+.hero-kumotori {
+  background-image: linear-gradient(rgba(20, 40, 20, 0.45), rgba(20, 40, 20, 0.45)), url('images/kumotori-main.jpg');
 }
 
 .hero h1 {
