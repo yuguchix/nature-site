@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>キャンプ | 山と森の記録</title>
+  <link rel="stylesheet" href="style.css?v=1" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <section class="hero hero-camp-list">
+    <h1>キャンプの記録</h1>
+    <p>
+      実際に行ったキャンプ場や、これから訪れたい場所を一覧でまとめるページです。
+      設備や雰囲気、感想、写真を少しずつ記録していきます。
+    </p>
+  </section>
+
+  <main>
+    <section class="card">
+      <h2>このページについて</h2>
+      <p>
+        キャンプ場の名前、エリア、簡単な特徴を一覧でまとめています。
+        今は短い紹介が中心ですが、今後は各キャンプ場の詳細ページを追加して、
+        設備、予約、雰囲気、写真、感想などを整理していく予定です。
+      </p>
+    </section>
+
+    <section>
+      <h2 class="section-title">行ったキャンプ場のリスト</h2>
+
+      <div class="camp-list">
+        <article class="camp-card">
+          <h3>ふもとっぱら</h3>
+          <div class="camp-meta">静岡県 / 富士山展望 / フリーサイト</div>
+          <p>
+            広大な敷地と富士山の景色が魅力の人気キャンプ場。開放感があり、ゆったり過ごしたい日に向いています。
+          </p>
+          <a class="detail-link" href="camp-fumotoppara.html">詳細を見る</a>
+        </article>
+
+        <article class="camp-card">
+          <h3>浩庵キャンプ場</h3>
+          <div class="camp-meta">山梨県 / 湖畔 / 絶景</div>
+          <p>
+            湖畔の景色が魅力で、静かな時間を楽しみやすいキャンプ場。朝夕の雰囲気も特に印象的です。
+          </p>
+          <a class="detail-link" href="camp-koan.html">詳細を見る</a>
+        </article>
+
+        <article class="camp-card">
+          <h3>道志の森キャンプ場</h3>
+          <div class="camp-meta">山梨県 / 林間 / 自然豊か</div>
+          <p>
+            森の中で過ごせる雰囲気の良いキャンプ場。川沿いのエリアもあり、自然を近くに感じられます。
+          </p>
+          <a class="detail-link" href="camp-doshinomori.html">詳細を見る</a>
+        </article>
+      </div>
+    </section>
+
+    <div class="note">
+      <strong>あとで拡張しやすい形です。</strong><br />
+      今は「詳細を見る」のリンク先ページがまだなくても大丈夫です。
+      今後、たとえば <code>camp-fumotoppara.html</code> のような個別ページを追加すれば、そのままつながります。
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
