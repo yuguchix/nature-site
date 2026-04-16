@@ -83,6 +83,22 @@ nav a:hover,
   gap: 12px;
 }
 
+/* =========================================================
+   4-0. 山リストのヒーロー画像
+========================================================= */
+.hero-mountain-list {
+  background-image:
+    linear-gradient(rgba(20, 40, 20, 0.45), rgba(20, 40, 20, 0.45)),
+    url("images/mountain.jpg");
+}
+
+.intro {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
 
 /* =========================================================
    4. 山ごとのヒーロー画像
