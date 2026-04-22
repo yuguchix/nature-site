@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>スキー | 山と森の記録</title>
+  <link rel="stylesheet" href="style.css?v=3" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <section class="hero hero-ski-list">
+    <h1>スキーの記録</h1>
+    <p>
+      実際に行ったスキー場や、これから訪れたい場所を一覧でまとめるページです。
+      雪質、コース、混雑、景色、感想などを少しずつ記録していきます。
+    </p>
+  </section>
+
+  <main>
+    <section class="card">
+      <h2>このページについて</h2>
+      <p>
+        スキー場の名前、エリア、簡単な特徴を一覧でまとめています。
+        今は短い紹介が中心ですが、今後は各スキー場の詳細ページを追加して、
+        コース、雪質、混雑、食事、写真、感想などを整理していく予定です。
+      </p>
+    </section>
+
+    <section>
+      <h2 class="section-title">行ったスキー場のリスト</h2>
+
+      <div class="ski-list">
+        <article class="ski-card">
+          <h3>かぐらスキー場</h3>
+          <div class="ski-meta">新潟県 / 雪質良好 / ロングシーズン</div>
+          <p>
+            標高が高く雪質が安定しやすいスキー場。シーズンが長く、景色も楽しみながら滑れます。
+          </p>
+          <a class="detail-link" href="ski-kagura.html">詳細を見る</a>
+        </article>
+
+        <article class="ski-card">
+          <h3>白馬八方尾根スキー場</h3>
+          <div class="ski-meta">長野県 / 上級コースあり / 展望良好</div>
+          <p>
+            コースバリエーションが豊富で、景色の良さも魅力。雪の多い日はかなり気持ちよく滑れます。
+          </p>
+          <a class="detail-link" href="ski-happo.html">詳細を見る</a>
+        </article>
+
+        <article class="ski-card">
+          <h3>丸沼高原スキー場</h3>
+          <div class="ski-meta">群馬県 / 雪質安定 / 春スキーも可</div>
+          <p>
+            シーズンが長く、滑りやすいコースが多いスキー場。天気の良い日は景色も印象的です。
+          </p>
+          <a class="detail-link" href="ski-marumakogen.html">詳細を見る</a>
+        </article>
+      </div>
+    </section>
+
+    <div class="note">
+      <strong>あとで拡張しやすい形です。</strong><br />
+      今は「詳細を見る」のリンク先ページがまだなくても大丈夫です。
+      今後、たとえば <code>ski-kagura.html</code> のような個別ページを追加すれば、そのままつながります。
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

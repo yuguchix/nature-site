@@ -482,3 +482,56 @@ footer {
     margin-right: 12px;
   }
 }
+/* =========================================================
+   Add Ski Section
+========================================================= */
+.hero-ski-list {
+  background-image:
+    linear-gradient(rgba(20, 40, 20, 0.45), rgba(20, 40, 20, 0.45)),
+    url("images/ski-hero.jpg");
+  color: white;
+  padding: 88px 20px;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-ski-custom {
+  color: white;
+  padding: 88px 20px;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ski-list {
+  display: grid;
+  gap: 18px;
+}
+
+.ski-card {
+  background: white;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ski-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.ski-card h3 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  color: #244021;
+}
+
+.ski-meta {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
